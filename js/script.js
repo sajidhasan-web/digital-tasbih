@@ -23,7 +23,7 @@ let allahuakberInitialValue = 0;
 
 alhamdulillahIncreament.addEventListener("click", function () {
   if (alhamdulillahInitialValue == 33) {
-    return alert("Done! Go next");
+    return alert("Alhamdulillah! Go next");
   }
   alhamdulillahInitialValue += 1;
   alhamdulillahDisplay.innerText = alhamdulillahInitialValue;
@@ -34,7 +34,7 @@ alhamdulillahIncreament.addEventListener("click", function () {
 alhamdulillahDecreament.addEventListener("click", function () {
   
     if(alhamdulillahInitialValue == 0){
-        return alert('You can not pass negetive value!')
+        return alert('Negative value is not supported!')
     }
   alhamdulillahInitialValue -= 1
   alhamdulillahDisplay.innerText = alhamdulillahInitialValue;
@@ -44,7 +44,7 @@ alhamdulillahDecreament.addEventListener("click", function () {
 
 subhanAllahIncreament.addEventListener("click", function () {
   if (subhanAllahInitialValue == 33) {
-    return alert("Done! Go next");
+    return alert("Subhan Allah! Go next");
   }
   subhanAllahInitialValue += 1;
   subhanAllahDisplay.innerText = subhanAllahInitialValue;
@@ -55,7 +55,7 @@ subhanAllahIncreament.addEventListener("click", function () {
 
 subhanAllahdecreament.addEventListener("click", function () { 
     if(subhanAllahInitialValue == 0){
-        return alert('You can not pass negetive value!')
+        return alert('Negative value is not supported!')
     }
   subhanAllahInitialValue -= 1
   subhanAllahDisplay.innerText = subhanAllahInitialValue;
@@ -64,8 +64,8 @@ subhanAllahdecreament.addEventListener("click", function () {
 // allahuakber Increament button
 
 allahuakberIncreament.addEventListener("click", function () {
-    if (allahuakberDisplay == 33) {
-      return alert("Done! Go next");
+    if (allahuakberInitialValue== 33) {
+      return alert("You are Done!");
     }
     allahuakberInitialValue += 1;
    allahuakberDisplay.innerText = allahuakberInitialValue;
@@ -75,7 +75,7 @@ allahuakberIncreament.addEventListener("click", function () {
 // allahuakber Decreament button
 allahuakberDecreament.addEventListener("click", function () { 
     if(allahuakberInitialValue == 0){
-        return alert('You can not pass negetive value!')
+        return alert('Negative value is not supported!')
     }
   allahuakberInitialValue -= 1
   allahuakberDisplay.innerText = allahuakberInitialValue;
