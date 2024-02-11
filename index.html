@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--google font Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                firstBtn: '#B388EB',
+                secondBtn: '#8093F1',
+                bodyBG: '#F4F4ED',
+                secondBG: '#72DDF7',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- custom style -->
+      <style>
+            body{
+                font-family: 'Roboto', sans-serif; 
+            
+            }
+      </style>
+  </head>
+  <body class="bg-bodyBG lg:h-[100vh] container mx-auto px-5 lg:px-20 flex items-center">
+    <main class=" text-violet-500 space-y-5 border-2 border-slate-500 p-7 rounded-xl">
+                <h1 class="text-center text-5xl">Digital Tasbih</h1>
+            <div class="bg-secondBG  lg:flex justify-around items-center flex-wrap p-5 gap-x-2 rounded-lg">
+                <div>
+                    <div class="space-y-4 p-2 flex flex-col items-center border-2 border-blue-600 rounded-lg ">
+                        <p class="text-white text-center text-xl">Alhamdulillah</p>
+                        <p id="alhamdulillahDisplay" class="text-white text-center text-xl">0</p>
+                        <div class="lg:flex space-y-4 lg:space-y-0 lg:gap-2">
+                            <div>
+                                <button id="alhamdulillahIncreament" class="btn btn-primary text-white">Increament</button>
+                            </div>
+                            <div>
+                                <button id="alhamdulillahDecreament" class="btn btn-accent bg-red-400 text-white">Decreament</button>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="space-y-4 p-2 flex flex-col items-center border-2 border-blue-600 rounded-lg">
+                        <p class="text-white text-center text-xl">Subhan Allah</p>
+                        <p id="subhanAllahDisplay" class="text-white text-center text-xl">0</p>
+                        <div class="lg:flex space-y-4 lg:space-y-0 lg:gap-2">
+                            <div>
+                                <button id="subhanAllahIncreament" class="btn btn-primary text-white">Increament</button>
+                            </div>
+                            <div>
+                                <button id="subhanAllahdecreament" class="btn btn-accent bg-red-400 text-white">Decreament</button>  
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="space-y-4 p-2 flex flex-col items-center border-2 border-blue-600 rounded-lg">
+                        <p class="text-white text-center text-xl">Allahuakber</p>
+                        <p id="allahuakberDisplay" class="text-white text-center text-xl">0</p>
+                        <div class="lg:flex space-y-4 lg:space-y-0 lg:gap-2">
+                            <div>
+                                <button id="allahuakberIncreament" class="btn btn-primary text-white">Increament</button>
+                            </div>
+                            <div>
+                                <button id="allahuakberDecreament" class="btn btn-accent bg-red-400 text-white">Decreament</button>  
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button id="reset" class="btn btn-error text-white">Reset All</button>
+            </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
